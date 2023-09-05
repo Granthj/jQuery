@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero inventore velit ex laborum placeat mollitia.
+        Similique fuga vero, ex dolorem illo quod temporibus, tenetur dolor amet placeat esse id iure.</p>
+        <button type="submit">Submit</button>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $('button').on('click',function(){
+            $('button').fadeOut(function(){
+                $('p').fadeOut(1000)
+                $('button').fadeIn(1000)
+                $('p').fadeIn(1000)
+            });
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Hello World</h1>
+    <input type="text" placeholder="Write Something" id="input">
+    <button id="but">Changing</button>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $('#but').click(function(){
+            $('#input').css({'margin':'200px','width':'500px','background-color':'red'});
+            $('#h1').css('text-align','center')
+        })
+    </script>
+</body>
+</html>
